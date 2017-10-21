@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kartl.apenibeer.AddingActivity">
+
+
+    <Button
+        android:id="@+id/btn_DoneAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/colorCardview"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="@dimen/hiElevation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/shidaConstrainti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/_12121212121"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="24dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="67dp"
+                android:text="ok"
+                android:layout_marginRight="67dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintHorizontal_bias="0.38"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView_add_Beer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardBackgroundColor="@color/colorCardview"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="@dimen/lowElevation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:layout_marginTop="15dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Constraint_add_Beer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/text_add_Beer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:drawableEnd="@drawable/ic_drop_down"
+                android:text="@string/ludis_shetana"
+                android:textAlignment="center"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_KartiType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="კასრის ტიპი"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:paddingTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/text_add_Beer"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" />
+
+            <Spinner
+                android:id="@+id/spinner_KasriType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/textView_KartiType"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginStart="0dp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline4" />
+
+            <!--meore xazi-->
+
+            <TextView
+                android:id="@+id/textView_KastiRaodenoba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kasrebis_raodenoba"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingTop="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView_KartiType"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btn_KasriCount_dec"
+                android:layout_width="@dimen/miniBtnWideSize"
+                android:layout_height="@dimen/miniBtnSize"
+                android:text="@string/minusi"
+                android:background="@android:color/transparent"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="@+id/textView_KastiRaodenoba" />
+
+            <EditText
+                android:id="@+id/edit_KasriCount"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:inputType="number"
+                app:layout_constraintLeft_toRightOf="@+id/btn_KasriCount_dec"
+                app:layout_constraintTop_toTopOf="@+id/btn_KasriCount_dec"
+                app:layout_constraintRight_toLeftOf="@+id/btn_KasriCount_inc" />
+
+            <Button
+                android:id="@+id/btn_KasriCount_inc"
+                android:layout_width="@dimen/miniBtnWideSize"
+                android:layout_height="@dimen/miniBtnSize"
+                android:text="@string/pliusi"
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView_KastiRaodenoba"/>
+
+            <!--მესამე ხაზი-->
+            <TextView
+                android:id="@+id/textView_Litraji"
+                android:text="@string/litraji"
+                android:paddingTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView_KastiRaodenoba"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_Litraji"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/textView_Litraji"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginStart="0dp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline4"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <!--me4 xazi-->
+
+            <TextView
+                android:id="@+id/textView_BeerType"
+                android:text="@string/ludis_saxeoba"
+                android:paddingTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Litraji"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinner_BeerType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/textView_BeerType"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginStart="0dp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline4" />
+
+            <!--me-5 xazi-->
+            <TextView
+                android:id="@+id/textView_LitrisFasi"
+                android:text="@string/litris_fasi"
+                android:paddingTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView_BeerType"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <Button
+                android:id="@+id/btn_ertFasi_dec"
+                android:layout_width="@dimen/miniBtnSize"
+                android:layout_height="@dimen/miniBtnSize"
+                android:text="@string/minusi"
+                android:background="@android:color/transparent"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="@+id/textView_LitrisFasi" />
+
+            <EditText
+                android:id="@+id/edit_ertFasi"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintLeft_toRightOf="@+id/btn_ertFasi_dec"
+                app:layout_constraintTop_toTopOf="@+id/textView_LitrisFasi"
+                app:layout_constraintRight_toLeftOf="@+id/btn_ertFasi_inc" />
+
+            <Button
+                android:id="@+id/btn_ertFasi_inc"
+                android:layout_width="@dimen/miniBtnSize"
+                android:layout_height="@dimen/miniBtnSize"
+                android:text="@string/pliusi"
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView_LitrisFasi"/>
+
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline4"
+                app:layout_constraintGuide_percent="0.45"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteY="248dp"
+                tools:layout_editor_absoluteX="164dp" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

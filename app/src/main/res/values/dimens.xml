@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardCornerRadius">8dp</dimen>
+    <dimen name="miniBtnSize">36dp</dimen>
+    <dimen name="miniBtnWideSize">52dp</dimen>
+    <dimen name="asi_dp" >100dp</dimen>
+</resources>
